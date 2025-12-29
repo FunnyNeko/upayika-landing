@@ -162,10 +162,12 @@ body {
 	right: 0;
 	height: 300px;
 	pointer-events: none;
-	background: linear-gradient(to bottom,
-			transparent 0%,
-			rgba(0, 0, 0, 0.8) 60%,
-			rgb(0, 0, 0) 100%);
+	background: linear-gradient(
+		to bottom,
+		transparent 0%,
+		rgba(0, 0, 0, 0.8) 60%,
+		rgb(0, 0, 0) 100%
+	);
 	/* Adjusted gradient to match black background at bottom */
 	z-index: 11;
 	/* Ensure it's above potential content overlap */
@@ -254,12 +256,10 @@ body {
 	flex-direction: row;
 	gap: 0 2rem;
 	max-width: 1200px;
-	background: rgba(0, 0, 0, 0.5);
 	padding: 2rem;
 	border-radius: 8px;
 	backdrop-filter: blur(5px);
 	line-height: 2em;
-	border: 1px solid #f6d872;
 }
 
 .text-column {
@@ -324,10 +324,12 @@ footer {
 	flex-direction: column;
 	align-content: center;
 	flex-wrap: wrap;
-	background: linear-gradient(to bottom,
-			transparent 0%,
-			rgba(0, 0, 0, 0.6) 50%,
-			rgb(0, 0, 0) 100%);
+	background: linear-gradient(
+		to bottom,
+		transparent 0%,
+		rgba(0, 0, 0, 0.6) 50%,
+		rgb(0, 0, 0) 100%
+	);
 	padding: 40px;
 	/* Ensure content isn't right at the black edge */
 }
@@ -353,7 +355,6 @@ footer img {
 	margin-bottom: 0;
 }
 
-
 /* New Utility Classes replacing inline styles */
 .text-box-column {
 	flex-direction: column;
@@ -376,7 +377,6 @@ footer img {
 .logo-dila {
 	height: 65px;
 }
-
 
 @media (max-width: 768px) {
 	.text-box {

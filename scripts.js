@@ -7,12 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check for reduced motion preference
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (prefersReducedMotion) {
-        if (midImage) midImage.style.transform = "translateY(0)";
-        if (heroText) heroText.style.transform = "translate(-50%, -50%)"; // Keep centered
-        return;
-    }
-
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
 
